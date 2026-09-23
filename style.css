@@ -715,6 +715,20 @@ ul {
   color: #ff9055;
 }
 
+.badge-completed {
+  background: rgba(46, 204, 113, 0.18);
+  border: 1px solid rgba(46, 204, 113, 0.55);
+  color: #2ecc71;
+}
+
+.badge-dot-completed {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2ecc71;
+  display: inline-block;
+}
+
 .badge-dot {
   width: 7px;
   height: 7px;
