@@ -8,11 +8,87 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Page Transitions */
 body {
   font-family: "Poppins", sans-serif;
   background: #050505;
   color: #ffffff;
   line-height: 1.6;
+  opacity: 1; /* Default visible */
+}
+
+body.page-enter {
+  animation: pageFadeIn 0.5s ease-out; /* Removed forwards so transform resets to none */
+}
+
+body.page-leave {
+  animation: pageFadeOut 0.4s ease-in forwards;
+}
+
+@keyframes pageFadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pageFadeOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-15px); }
+}
+
+/* Custom Cursor */
+body.has-custom-cursor {
+  cursor: none;
+}
+
+body.has-custom-cursor a,
+body.has-custom-cursor button,
+body.has-custom-cursor .menu-toggle {
+  cursor: none;
+}
+
+.custom-cursor,
+.custom-cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 9999;
+  display: none;
+}
+
+body.has-custom-cursor .custom-cursor,
+body.has-custom-cursor .custom-cursor-follower {
+  display: block;
+}
+
+.custom-cursor {
+  width: 8px;
+  height: 8px;
+  background-color: #f7b93e;
+  transform: translate3d(-50%, -50%, 0);
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
+.custom-cursor-follower {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(247, 185, 62, 0.4);
+  background-color: rgba(247, 185, 62, 0.05);
+  transform: translate3d(-50%, -50%, 0);
+  margin-top: -16px;
+  margin-left: -16px;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, margin 0.3s ease;
+}
+
+.custom-cursor-follower.hover {
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  background-color: rgba(247, 185, 62, 0.15);
+  border-color: rgba(247, 185, 62, 0.8);
 }
 
 img {
@@ -157,9 +233,10 @@ ul {
   position: relative;
   padding-top: 130px;
   overflow: hidden;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.9)),
-    url("assets/hero-bg.png") center/cover no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.9)), url("assets/hero-bg.png");
+  background-position: center 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero::before {
