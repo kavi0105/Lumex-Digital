@@ -650,6 +650,26 @@ ul {
   width: 100%;
 }
 
+/* Section CTA / View All link */
+.section-cta-wrap {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.section-view-all {
+  gap: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.section-view-all i {
+  transition: transform 0.3s ease;
+}
+
+.section-view-all:hover i {
+  transform: translateX(5px);
+}
+
 /* Projects */
 .projects-grid {
   display: grid;

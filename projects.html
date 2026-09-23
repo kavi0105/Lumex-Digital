@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects | Lumex Digital</title>
+  <meta name="description" content="Explore completed and ongoing projects by Lumex Digital — websites, e-commerce platforms, brand presence sites, and more." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo-wrap">
+        <img src="assets/logo.png" alt="Lumex Digital Logo" class="logo" />
+        <div class="logo-text">
+          <span class="brand-name">Lumex Digital</span>
+          <span class="brand-tag">Illuminate Your Digital Growth</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#clients">Our Clients</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="projects.html" class="active">Our Projects</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-glow page-hero-glow-left"></div>
+    <div class="page-hero-glow page-hero-glow-right"></div>
+    <div class="container page-hero-content reveal">
+      <a href="index.html" class="breadcrumb">
+        <i class="fa-solid fa-house"></i> Home <i class="fa-solid fa-chevron-right"></i> <span>Projects</span>
+      </a>
+      <h1>Our <span class="gradient-text">Projects</span></h1>
+      <p>Real work. Real results. A showcase of completed and ongoing projects we've built for our clients.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="proj-filter-bar">
+    <div class="container">
+      <div class="proj-filters">
+        <button class="proj-filter-btn active" data-filter="all">All Projects</button>
+        <button class="proj-filter-btn" data-filter="completed">Completed</button>
+        <button class="proj-filter-btn" data-filter="progress">In Progress</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="section proj-page-grid-section">
+    <div class="container">
+      <div class="projects-grid proj-page-grid">
+
+        <!-- Project 1: Artist Website -->
+        <div class="project-card reveal" data-status="progress">
+          <div class="project-image-wrap">
+            <img src="assets/1774955532446.jpg" alt="Artist Portfolio Website" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-badge badge-progress">
+                <span class="badge-dot"></span> In Progress
+              </span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">Website Development</span>
+            </div>
+            <h3>Artist Portfolio Website</h3>
+            <p>A custom website for an artist to showcase their creative work online. Focused on a clean and minimal design that highlights artwork, fully responsive for all devices, and a fast, smooth user experience.</p>
+            <div class="project-tags">
+              <span>Clean Design</span>
+              <span>Responsive</span>
+              <span>Portfolio</span>
+            </div>
+            <div class="project-highlights">
+              <div><i class="fa-solid fa-paintbrush"></i> Minimal &amp; artist-focused layout</div>
+              <div><i class="fa-solid fa-mobile-screen"></i> Fully responsive for all devices</div>
+              <div><i class="fa-solid fa-bolt"></i> Fast &amp; smooth user experience</div>
+            </div>
+            <div class="project-status">
+              <i class="fa-solid fa-fire"></i>
+              <span>A strong online presence is essential for artists to reach a wider audience and grow their brand.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: NEXORA E-Commerce -->
+        <div class="project-card reveal" data-status="progress">
+          <div class="project-image-wrap">
+            <img src="assets/1775497147407.jpg" alt="NEXORA E-Commerce Project" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-badge badge-progress">
+                <span class="badge-dot"></span> In Progress
+              </span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">E-Commerce Development</span>
+            </div>
+            <h3>NEXORA — E-Commerce Platform</h3>
+            <p>A fully functional e-commerce website for NEXORA. Our team at Lumex Digital is focused on delivering a modern, fast, and user-friendly online shopping experience.</p>
+            <div class="project-tags">
+              <span>E-Commerce</span>
+              <span>Modern UI</span>
+              <span>Fast &amp; Scalable</span>
+            </div>
+            <div class="project-highlights">
+              <div><i class="fa-solid fa-cart-shopping"></i> Full product listing &amp; checkout</div>
+              <div><i class="fa-solid fa-mobile-screen"></i> Mobile-friendly shopping experience</div>
+              <div><i class="fa-solid fa-bolt"></i> Fast-loading &amp; optimised performance</div>
+            </div>
+            <div class="project-status">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Building a seamless shopping experience for users across all devices.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Kannai Bonnai -->
+        <div class="project-card reveal" data-status="completed">
+          <div class="project-image-wrap">
+            <img src="assets/Screenshot 2026-09-23 190146.png" alt="Kannai Bonnai Project" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-badge badge-completed">
+                <span class="badge-dot-completed"></span> Completed
+              </span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">Static Website Development</span>
+            </div>
+            <h3>Kannai Bonnai — Brand Website</h3>
+            <p>A clean, modern static website for Kannai Bonnai, built to showcase the brand, food reviews, videos, contact information, and product highlights in one professional online space. Focused on brand presence and content presentation — not e-commerce.</p>
+            <div class="project-tags">
+              <span>Clean Design</span>
+              <span>Mobile-friendly</span>
+              <span>Brand Presence</span>
+              <span>Product Showcase</span>
+            </div>
+            <div class="project-highlights">
+              <div><i class="fa-solid fa-star"></i> Modern &amp; responsive design</div>
+              <div><i class="fa-solid fa-video"></i> Review &amp; video showcase section</div>
+              <div><i class="fa-solid fa-bag-shopping"></i> Product highlight page</div>
+            </div>
+            <div class="project-status">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Need a professional website for your brand or business?</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Thunder Shine Motor Spa -->
+        <div class="project-card reveal" data-status="progress">
+          <div class="project-image-wrap">
+            <img src="assets/Screenshot 2026-09-23 190547.png" alt="Thunder Shine Motor Spa Project" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-badge badge-progress">
+                <span class="badge-dot"></span> In Progress
+              </span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type">Business Website Development</span>
+            </div>
+            <h3>Thunder Shine Motor Spa</h3>
+            <p>A modern website for Thunder Shine Motor Spa — a responsive static business website enhanced with a booking/appointment feature, making it easier for customers to explore services, check pricing, view previous work, and request appointments online.</p>
+            <div class="project-tags">
+              <span>Booking System</span>
+              <span>Responsive</span>
+              <span>Service List</span>
+              <span>Modern UI</span>
+            </div>
+            <div class="project-highlights">
+              <div><i class="fa-solid fa-calendar-check"></i> Online appointment booking</div>
+              <div><i class="fa-solid fa-list-check"></i> Service &amp; price list showcase</div>
+              <div><i class="fa-solid fa-images"></i> Gallery section for previous work</div>
+            </div>
+            <div class="project-status">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Need a professional website for your business? Build your digital presence with Lumex Digital.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section srv-cta">
+    <div class="container">
+      <div class="srv-cta-box reveal">
+        <div class="srv-cta-glow"></div>
+        <span class="section-tag">Start your project</span>
+        <h2>Have a project in mind?</h2>
+        <p>We'd love to hear about it. Tell us your goals and let's create something great together.</p>
+        <div class="srv-cta-buttons">
+          <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="services.html" class="btn btn-secondary">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Lumex Digital. All rights reserved.</p>
+      <p>Digital Marketing Agency</p>
+    </div>
+  </footer>
+
+  <script src="pages.js"></script>
+</body>
+</html>
